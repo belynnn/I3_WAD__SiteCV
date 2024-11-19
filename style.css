@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.04em;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column; /* Permet une meilleure lisibilité sur mobile */
+    gap: 1rem; /* Ajoute un espace entre les éléments */
+}
+
+.socials{
+    display: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; /* Empile les liens pour les petits écrans */
+    gap: 1rem; /* Espacement entre les liens */
+}
+
+main {
+    margin: 5rem 3rem 2rem 1rem;
+}
+
+section {
+    margin-block: 2em;
+    padding: 1rem; /* Ajoute un espace intérieur */
+}
+
+h2 {
+    font-size: 1.8em; /* Taille réduite pour les petits écrans */
+    text-transform: uppercase;
+    color: green;
+}
+
+h3{
+    font-size: 1.5em; /* Taille réduite pour les petits écrans */
+    text-transform: uppercase;
+    color: green;
+    margin-top: 1em;
+}
+
+h5{
+    font-size: 1em;
+}
+
+h6{
+    font-size: .9em;
+}
+
+/* .about pour mobile */
+.about {
+    width: 100%;
+    height: auto; /* Autorise la hauteur dynamique sur mobile */
+    display: flex;
+    flex-direction: column; /* Garde l'alignement vertical */
+    gap: 1rem; /* Espace entre les enfants */
+}
+
+.about > div {
+    flex: none; /* Permet un ajustement plus flexible */
+    display: flex;
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+.about img {
+    display: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; /* Empile les éléments sur mobile */
+    gap: 1rem; /* Espacement entre les colonnes */
+}
+
+.col{
+    margin-block: .5em;
+}
+
+/* Media Query : Écrans moyens */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Réorganise les éléments horizontalement */
+        justify-content: space-between;
+    }
+
+    ul {
+        flex-direction: row; /* Repasse les liens en ligne */
+        gap: 2em;
+    }
+
+    .about {
+        height: 75vh;
+        flex-direction: column; /* Toujours vertical pour cette taille */
+    }
+
+    .about > h2 {
+        font-size: 2.5em;
+    }
+
+    .row {
+        flex-direction: row; /* Réorganise horizontalement pour les tablettes */
+    }
+}
+
+/* Media Query : Écrans larges */
+@media (min-width: 1024px) {
+    body{
+        width: 75%;
+        margin: auto;
+    }
+
+    .socials{
+        position: fixed; /* Positionne la navigation de manière fixe par rapport à l'écran */
+        bottom: 0; /* Aligne la navigation au bas de l'écran */
+        left: 0; /* La positionne à gauche de l'écran */
+        width: 200px; /* Largeur fixe */
+        padding: 1rem;
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        gap: 1rem; /* Espacement entre les liens */
+    }
+
+    .socials ul {
+        flex-direction: column; /* Repasse les liens en ligne */
+        gap: 2em;
+    }
+
+    .about {
+        height: 75vh;
+    }
+
+    .about img {
+        width: 75%; /* Limite la largeur sur les écrans plus grands */
+    }
+}
