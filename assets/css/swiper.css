@@ -1,0 +1,15 @@
+.swiper-container-1, .swiper-container-2 {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+}

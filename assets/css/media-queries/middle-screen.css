@@ -1,0 +1,30 @@
+/* Media Query : Écrans moyens */
+@media (min-width: 768px) {
+    nav {
+        flex-direction: row; /* Réorganise les éléments horizontalement */
+        justify-content: space-between;
+    }
+
+    ul {
+        flex-direction: row; /* Repasse les liens en ligne */
+        gap: 2em;
+    }
+
+    .landing {
+        height: 75vh;
+        flex-direction: column; /* Toujours vertical pour cette taille */
+    }
+
+    .landing > h2 {
+        font-size: 2.5em;
+    }
+
+    .landing img {
+        display: block;
+        width: 25%; /* Limite la largeur sur les écrans plus grands */
+    }
+
+    .row {
+        flex-direction: row; /* Réorganise horizontalement pour les tablettes */
+    }
+}

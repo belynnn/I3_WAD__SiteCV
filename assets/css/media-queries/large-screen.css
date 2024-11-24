@@ -1,0 +1,32 @@
+/* Media Query : Écrans larges */
+@media (min-width: 1024px) {
+    main{
+        width: 75%;
+        margin: auto;
+    }
+
+    .socials{
+        position: fixed; /* Positionne la navigation de manière fixe par rapport à l'écran */
+        bottom: 0; /* Aligne la navigation au bas de l'écran */
+        left: 0; /* La positionne à gauche de l'écran */
+        width: 200px; /* Largeur fixe */
+        padding: 1rem;
+        display: flex;
+        flex-direction: column; /* Empile les éléments verticalement */
+        gap: 1rem; /* Espacement entre les liens */
+    }
+
+    .socials ul {
+        flex-direction: column; /* Repasse les liens en ligne */
+        gap: 2em;
+    }
+
+    .landing {
+        height: 75vh;
+    }
+
+    .landing img {
+        display: block;
+        width: 30%; /* Limite la largeur sur les écrans plus grands */
+    }
+}

@@ -3,22 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Développeuse Web - Prenom Nom</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fullstack Developer - Deborah Clerckx</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/landing.css">
+    <link rel="stylesheet" href="assets/css/media-queries/middle-screen.css">
+    <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
+    <link rel="stylesheet" href="assets/css/swiper.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <script defer src="assets/js/swiper.js"></script>
 </head>
 
 <body>
+    <span id="top-anchor"></span>
     <header>
-        <nav>
-            <p>Prenom Nom</p>
+        <nav class="d-flex justify-content-between navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#"><span class="h2">Deborah Clerckx</span></a>
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <ul>
-                <li><a href="#">À propos</a></li>
-                <li><a href="#">Webdev</a></li>
-                <li><a href="#">Projets</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            New start
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="newstart.html#ns-projects-anchor">Projects</a>
+                            <a class="dropdown-item" href="newstart.html#ns-trainings-anchor">Trainings</a>
+                            <a class="dropdown-item" href="newstart.html#ns-jobs-anchor">Jobs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Past levels
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Projects</a>
+                            <a class="dropdown-item" href="#">Trainings</a>
+                            <a class="dropdown-item" href="#">Jobs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <nav class="socials">
@@ -26,178 +70,202 @@
                 <li><a href="#">LinkedIn</a></li>
                 <li><a href="#">GitHub</a></li>
                 <li><a href="#">Bento.me</a></li>
+                <li><a href="#">Mail</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section class="about" id="about">
-            <h2>À propos</h2>
-            <div>
-                <img src="me.png" alt="Image">
+    <main class="m-4">
+        <section id="landing" class="text-center landing">
+            <p>I'm looking for an internship between Avril 2025 & June 2025 as a C# or PHP developer !</p>
 
+            
+            <div>
+                <h1>Fullstack Developer Junior</h1>
+
+                <div>
+                    <p>Hi, I'm</p>
+                    <h2>Deborah Clerckx</h2>
+                    
+                    <img src="assets/imgs/me.png" alt="Image">
+                </div>
+            </div>
+        </section>
+
+        <span id="about-anchor"></span>
+        <section id="about" class="about">
+            <h3>About</h3>
+            <div>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et culpa fugiat doloremque nisi placeat repellendus neque ullam esse blanditiis fuga totam, laudantium voluptas iure eos pariatur? Veritatis sint eos laboriosam blanditiis, tempore ipsum assumenda corrupti eum ratione tenetur voluptates ex porro natus provident sapiente officiis magni totam. Maxime, accusamus!</p>
                     
                     <ul>
-                        <li><a href="#">Continuer à lire</a></li>
-                        <li><a href="#">Reconversion professionnelle</a></li>
-                        <li><a href="#">À ne pas .gitignore</a></li>
+                        <li><a href="#">-> Keep reading</a></li>
+                        <li><a href="#">-> New start</a></li>
+                        <li><a href="#">-> Don't .gitignore this</a></li>
                     </ul>
                 </div>
             </div>
-        </section>
 
-        <h2>Reconversion professionnelle</h2>
-        <section class="courses" id="courses">
-            <h3>Formations</h3>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h4>Web Application Developer</h4>
-                        <h5>Interface3 - Bruxelles</h5>
-                        <h6>2024</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
-                        <ul>
-                            <li><a href="#">Site web</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h4>Blender</h4>
-                        <h5>Forem - Tubize</h5>
-                        <h6>2023</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
-                        <ul>
-                            <li><a href="#">Site web</a></li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <h4>Développeuse Backend orientée Data</h4>
-                        <h5>Interface3 - Namur</h5>
-                        <h6>2021</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
-                        <ul>
-                            <li><a href="#">Site web</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <h4>Découverte des métiers de l'informatique</h4>
-                        <h5>Interface3 - Namur</h5>
-                        <h6>2024</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
-                        <ul>
-                            <li><a href="#">Site web</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+                <a href="#top-anchor">Return to the top</a>
             </div>
         </section>
 
-        <section class="projects" id="projects">
-            <h3>Projets</h3>
-            <div class="container">
+        <span id="new-start-anchor"></span>
+        <section id="new-start" class="new-start">
+            <h3>New start</h3>
+
+            <div>
+                <h4>Formations</h4>
                 <div class="row">
-                    <div class="col">
-                        <h4>Insectopedia</h4>
-                        <h5>2024</h5>
-
+                    <div class="col-xl">
+                        <h5>Web Application Developer</h5>
+                        <h6>Interface3 - Bruxelles</h6>
+                        <p>2024</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+    
+                        <ul>
+                            <li><a href="#">Site web</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl">
+                        <h5>Blender</h5>
+                        <h6>Forem - Tubize</h6>
+                        <p>2023</p>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+    
+                        <ul>
+                            <li><a href="#">Site web</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl">
+                        <h5>Développeuse Backend orientée Data</h4>
+                        <h6>Interface3 - Namur</h5>
+                        <p>2021</h6>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+    
+                        <ul>
+                            <li><a href="#">Site web</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-xl">
+                        <h5>Découverte des métiers de l'informatique</h4>
+                        <h6>Interface3 - Namur</h5>
+                        <p>2024</h6>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+    
+                        <ul>
+                            <li><a href="#">Site web</a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div>
+                    <a href="#top-anchor">Revenir en haut</a>
+                </div>
+            </div>
 
+            <div>
+                <h4>Projets</h4>
+                <div class="row">
+                    <div class="col-xl">
+                        <h5>Insectopedia</h5>
+                        <p>2024</p>
+    
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JSON</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>AJAX</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>PHP</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Symfony7</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Twig</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>phpmyadmin</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>MySQL</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>XAMP</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h4>Hackathon - Greenier, Please</h4>
-                        <h5>2024</h5>
-
+                    <div class="col-xl">
+                        <h5>Hackathon - Greenier, Please</h5>
+                        <p>2024</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>React</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Phaser JS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JSON</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>FileZilla</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h4>Guess The Number</h4>
-                        <h5>2024</h5>
-
+                    <div class="col-xl">
+                        <h5>Guess The Number</h5>
+                        <p>2024</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
@@ -205,70 +273,70 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <h4>SanctusRP</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>SanctusRP</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>LUA</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>FiveM</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h4>Numérique Pour Tous</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>Numérique Pour Tous</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h4>Tuto Weather App</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>Tuto Weather App</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
@@ -276,43 +344,43 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <h4>Tuto - Number Cruncher</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>Tuto - Number Cruncher</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-                    <div class="col">
-                        <h4>Tuto - Vejimo</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>Tuto - Vejimo</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>HTML/CSS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>JavaScript</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
@@ -320,165 +388,233 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <h4>DEFT Card Game</h4>
-                        <h5>2021</h5>
-
+                    <div class="col-xl">
+                        <h5>DEFT Card Game</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>MongoDB</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Express JS</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Angular</p>
                             </div>
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>NodeJS</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
-
-                    <div class="col">
-                        <h4>The Hangman</h4>
-                        <h5>2021</h5>
-
+    
+                    <div class="col-xl">
+                        <h5>The Hangman</h5>
+                        <p>2021</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <h6>Outils :</h6>
                         <div class="row">
-                            <div class="col">
+                            <div class="col-xl">
                                 <p>Python</p>
                             </div>
                         </div>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
                 </div>
+    
+                <div>
+                    <a href="#top-anchor">Revenir en haut</a>
+                </div>
             </div>
-        </section>
 
-        <section class="jobs" id="jobs">
-            <h2>Expériences professionnelles</h2>
-            <div class="container">
+            <div>
+                <h4>Expériences professionnelles</h4>
                 <div class="row">
-                    <div class="col">
-                        <h3>NOM ENTREPRISE</h3>
-                        <h4>ANNEE</h4>
-
+                    <div class="col-xl">
+                        <h5>NOM ENTREPRISE</h5>
+                        <p>ANNEE</p>
+    
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-
+    
                         <ul>
                             <li><a href="#">GitHub</a></li>
                             <li><a href="#">Voir</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="gi-jobs" id="gi-jobs">
-            <h2>Auparavant</h2>
-            <h3>Formations</h3>
-            <h3>Expériences professionnelles</h3>
-
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <h4>Technicienne de surface</h4>
-                        <h5>La Chevalerie - Florennes</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-
-                    <div class="col">
-                        <h4>Employée valoriste polyvalente</h4>
-                        <h5>Ressourcerie RESTOR - Tubize</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-                    
-                    <div class="col">
-                        <h4>Ouvrière valoriste</h4>
-                        <h5>AID Val de Sennes - Tubize</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <h4>Employée polyvalente</h4>
-                        <h5>Supermarché Match - Braine-l'Alleud</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-
-                    <div class="col">
-                        <h4>Stage - Gestionnaire de petite entreprise</h4>
-                        <h5>BD World - Waterloo</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-
-                    <div class="col">
-                        <h4>Stage - Vendeuse polyvalente</h4>
-                        <h5>Vanille Fraise - Braine-l'Alleud</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <h4>Stage - Vendeuse polyvalente</h4>
-                        <h5>Le Grenier de Xavière - Braine-l'Alleud</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-
-                    <div class="col">
-                        <h4>Stage - Assistante vendeuse</h4>
-                        <h5>BD World - Waterloo</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
-
-                    <div class="col">
-                        <h4>Stage - Assistante vendeuse</h4>
-                        <h5>JBC - Braine-l'Alleud</h5>
-                        <h6>2020</h6>
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                    </div>
+    
+                <div>
+                    <a href="#top-anchor">Revenir en haut</a>
                 </div>
             </div>
         </section>
 
+        <section id="past-levels" class="past-levels">
+            <h3>Past levels</h3>
+
+            <h4>Trainings</h4>
+            <div class="row">
+                <div class="col-xl">
+                    <h5>Valoriste</h5>
+                    <h6>AID Val de Senne - Tubize</h5>
+                    <p>2019</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Néerlandais A0/A1/A2</h4>
+                    <h6>Forem - Tubize</h5>
+                    <p>2017</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+                
+                <div class="col-xl">
+                    <h5>Vente directe</h4>
+                    <h6>APPCO GROUP - Charleroi</h5>
+                    <p>2016</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl">
+                    <h5>CESS - Gestion de petites et moyennes entreprises</h4>
+                    <h6>Insitut de la Vallée Bailly - Braine-l'Alleud</h5>
+                    <p>2012</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Ventes</h4>
+                    <h6>Institut de la Vallée Bailly</h5>
+                    <p>2005-2011</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>CEB</h4>
+                    <h6>Ecol-xle Saint-Rémy</h5>
+                    <p>1996-2004</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+            </div>
+
+            <h4>Jobs</h4>
+            <div class="row">
+                <div class="col-xl">
+                    <h5>Technicienne de surface</h5>
+                    <h6>La Chevalerie - Florennes</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Employée valoriste polyvalente</h4>
+                    <h6>Ressourcerie RESTOR - Tubize</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+                
+                <div class="col-xl">
+                    <h5>Ouvrière valoriste</h4>
+                    <h6>AID Val de Sennes - Tubize</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl">
+                    <h5>Employée polyvalente</h4>
+                    <h6>Supermarché Match - Braine-l'Alleud</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Stage - Gestionnaire de petite entreprise</h4>
+                    <h6>BD World - Waterloo</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Stage - Vendeuse polyvalente</h4>
+                    <h6>Vanille Fraise - Braine-l'Alleud</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xl">
+                    <h5>Stage - Vendeuse polyvalente</h4>
+                    <h6>Le Grenier de Xavière - Braine-l'Alleud</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Stage - Assistante vendeuse</h4>
+                    <h6>BD World - Waterloo</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+
+                <div class="col-xl">
+                    <h5>Stage - Assistante vendeuse</h4>
+                    <h6>JBC - Braine-l'Alleud</h5>
+                    <p>2020</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                </div>
+            </div>
+
+            <div>
+                <a href="#top-anchor">Return to the top</a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Créé par Prenom Nom</p>
+        <nav>
+            <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">Bento.me</a></li>
+                <li><a href="#">Mail</a></li>
+            </ul>
+        </nav>
+
+        <p>Créé par Deborah Clerckx</p>
     </footer>
 </body>
 </html>
