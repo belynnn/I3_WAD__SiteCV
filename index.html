@@ -12,22 +12,22 @@
     <link rel="stylesheet" href="assets/css/media-queries/middle-screen.css">
     <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
+    <script defer src="assets/js/swiper.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
+    <!-- Bootstrap CDN -->
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     
-    <script defer src="assets/js/swiper.js"></script>
+    <!-- Swiper CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
     <span id="top-anchor"></span>
     <header>
-        <nav class="d-flex justify-content-between navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#"><span class="h2">Deborah Clerckx</span></a>
+        <nav class="static d-flex justify-content-between navbar navbar-light bg-light">
+            <a class="navbar-brand btn" href="#"><span class="h2 text-success">// CKX</span></a>
         
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,9 +43,9 @@
                             New start
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="newstart.html#ns-projects-anchor">Projects</a>
-                            <a class="dropdown-item" href="newstart.html#ns-trainings-anchor">Trainings</a>
-                            <a class="dropdown-item" href="newstart.html#ns-jobs-anchor">Jobs</a>
+                            <a class="dropdown-item" href="careertransition.html#ns-projects-anchor">Projects</a>
+                            <a class="dropdown-item" href="careertransition.html#ns-trainings-anchor">Trainings</a>
+                            <a class="dropdown-item" href="careertransition.html#ns-jobs-anchor">Jobs</a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -64,23 +64,21 @@
                 </ul>
             </div>
         </nav>
-
-
     </header>
 
     <main class="m-4">
         <section id="landing" class="landing">
             <div class="text-center">
+                <h1 class="text-left">Deborah Clerckx</h1>
+                <h2 class="text-left">Backend Developer</h2>
                 <p class="text-left">I'm looking for an internship between Avril 2025 & June 2025 as a C# or PHP developer !</p>
-                <p class="text-left">🖖 Aloha, I'm a</p>
-                <h1 class="text-left">Jr. Fullstack Developer</h1>
 
                 <nav class="socials">
                     <ul class="d-flex justify-content-between">
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Bento.me</a></li>
-                        <li><a href="#">Mail</a></li>
+                        <li><a class="btn" href="https://www.linkedin.com/in/deborah-clerckx/">LinkedIn</a></li>
+                        <li><a class="btn" href="https://github.com/belynnn">GitHub</a></li>
+                        <li><a class="btn" href="https://bento.me/belynn">Bento.me</a></li>
+                        <li><a class="btn" href="mailto:gobelynn@gmail.com">Mail</a></li>
                     </ul>
                 </nav>
 
@@ -91,43 +89,51 @@
         <span id="about-anchor"></span>
         <section id="about" class="about">
             <h3>About</h3>
-            <div>
-                <div>
-                    <p>I am a Junior Fullstack Developer, a passionate learning and I love to solve real-life problem.<br>I am currently pursuing my Web Application Developer training from Interface3 training center, in Brussels.<br>I am ok to work in solo but I am a good team player with excellent communication skills.</p>
-                    
-                    <ul>
-                        <li><a href="#">-> Keep reading</a></li>
-                        <li><a href="newstart.html">-> New start</a></li>
-                        <li><a href="#">-> Don't .gitignore this</a></li>
-                    </ul>
-                </div>
-            </div>
 
             <div>
-                <a href="#top-anchor">Return to the top</a>
+                <p>I am a Junior Fullstack Developer, a passionate learning and I love to solve real-life problem.<br>I am currently pursuing my Web Application Developer training from Interface3 training center, in Brussels.<br>I am ok to work in solo but I am a good team player with excellent communication skills.</p>
+                
+                <ul>
+                    <li><a class="btn" href="#"><span>📓</span> Keep reading</a></li>
+                    <li><a class="btn" href="#career-transition-anchor"><span>🚀</span> Career transition to Web Development</a></li>
+                    <li><a class="btn" href="#former-career-anchor"><span>💼</span> Former career</a></li>
+                    <li><a class="btn" href="#do-not-gitignore-anchor"><span>🪅</span> Don't .gitignore this</a></li>
+                </ul>
+    
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
+                </div>
             </div>
         </section>
 
-        <span id="new-start-anchor"></span>
-        <section id="new-start" class="new-start">
-            <h3>New start</h3>
+        <span id="career-transition-anchor"></span>
+        <section id="career-transition" class="career-transition">
+            <h3>Career transition</h3>
 
             <div>
-                <h4>Trainings</h4>
+                <div class="d-flex justify-content-between">
+                    <h4>Trainings</h4>
+                    <a class="btn" href="#">More informations</a>
+                </div>
+
                 <ul>
                     <li>Web Application Developer - Interface3 - Brussels - 2024</li>
                     <li>Blender - Forem - Tubize - 2023</li>
                     <li>Backend Developer DATA oriented - Interface3 - Namur - 2021</li>
                     <li>Discovery of jobs in IT - Interface3 - Namur - 2021</li>
                 </ul>
-    
-                <div>
-                    <a href="#top-anchor">Revenir en haut</a>
+
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
                 </div>
             </div>
 
             <div>
-                <h4>Projects</h4>
+                <div class="d-flex justify-content-between">
+                    <h4>Projects</h4>
+                    <a class="btn" href="#">More informations</a>
+                </div>
+
                 <ul>
                     <li>Insectopedia - PHP / Symfony7 - 2024</li>
                     <li>Greenier, Please - Hackathon - 2024</li>
@@ -140,166 +146,116 @@
                     <li>DEFT Card Game - MEAN stack - 2021</li>
                     <li>The Hangman - Turle Python - 2021</li>
                 </ul>
-    
-                <div>
-                    <a href="#top-anchor">Revenir en haut</a>
+
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
                 </div>
             </div>
 
             <div>
-                <h4>Jobs</h4>
+                <div class="d-flex justify-content-between">
+                    <h4>Jobs</h4>
+                    <a class="btn" href="#">More informations</a>
+                </div>
+
                 <ul>
                     <li>You ! - Now</li>
                 </ul>
     
-                <div>
-                    <a href="#top-anchor">Revenir en haut</a>
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
                 </div>
             </div>
         </section>
 
-        <section id="past-levels" class="past-levels">
-            <h3>Past levels</h3>
+        <span id="former-career-anchor"></span>
+        <section id="former-career" class="former-career">
+            <h3>Former career</h3>
 
-            <h4>Trainings</h4>
-            <div class="row">
-                <div class="col-xl">
-                    <h5>Valoriste</h5>
-                    <h6>AID Val de Senne - Tubize</h5>
-                    <p>2019</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4>Trainings</h4>
+                    <a class="btn" href="#">More informations</a>
                 </div>
 
-                <div class="col-xl">
-                    <h5>Néerlandais A0/A1/A2</h4>
-                    <h6>Forem - Tubize</h5>
-                    <p>2017</p>
+                <ul>
+                    <li>Valorist - AID Val de Senne - Tubize - 2019</li>
+                    <li>Dutch A0 to A2 - Forem - Tubize - 2017</li>
+                    <li>Door-to-door sales assistant - APPCO Group - Charleroi - 2016</li>
+                    <li>1st year of Psychology assistant - Institut Marie Haps - Brussels - 2013</li>
+                    <li>CESS - Management of small and medium-sized enterprises - Institut de la Vallée Bailly - Braine-l'Alleud - 2012</li>
+                    <li>CESI - Sales - Institut de la Vallée Bailly - 2011</li>
+                    <li>CEB - Ecole Saint-Rémy - 2004</li>
+                </ul>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-                
-                <div class="col-xl">
-                    <h5>Vente directe</h4>
-                    <h6>APPCO GROUP - Charleroi</h5>
-                    <p>2016</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl">
-                    <h5>CESS - Gestion de petites et moyennes entreprises</h4>
-                    <h6>Insitut de la Vallée Bailly - Braine-l'Alleud</h5>
-                    <p>2012</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Ventes</h4>
-                    <h6>Institut de la Vallée Bailly</h5>
-                    <p>2005-2011</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>CEB</h4>
-                    <h6>Ecol-xle Saint-Rémy</h5>
-                    <p>1996-2004</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-            </div>
-
-            <h4>Jobs</h4>
-            <div class="row">
-                <div class="col-xl">
-                    <h5>Technicienne de surface</h5>
-                    <h6>La Chevalerie - Florennes</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Employée valoriste polyvalente</h4>
-                    <h6>Ressourcerie RESTOR - Tubize</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-                
-                <div class="col-xl">
-                    <h5>Ouvrière valoriste</h4>
-                    <h6>AID Val de Sennes - Tubize</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl">
-                    <h5>Employée polyvalente</h4>
-                    <h6>Supermarché Match - Braine-l'Alleud</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Stage - Gestionnaire de petite entreprise</h4>
-                    <h6>BD World - Waterloo</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Stage - Vendeuse polyvalente</h4>
-                    <h6>Vanille Fraise - Braine-l'Alleud</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-xl">
-                    <h5>Stage - Vendeuse polyvalente</h4>
-                    <h6>Le Grenier de Xavière - Braine-l'Alleud</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Stage - Assistante vendeuse</h4>
-                    <h6>BD World - Waterloo</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
-                </div>
-
-                <div class="col-xl">
-                    <h5>Stage - Assistante vendeuse</h4>
-                    <h6>JBC - Braine-l'Alleud</h5>
-                    <p>2020</p>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nam sunt est explicabo assumenda fugit, deleniti nisi necessitatibus illum reprehenderit.</p>
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
                 </div>
             </div>
 
             <div>
-                <a href="#top-anchor">Return to the top</a>
+                <div class="d-flex justify-content-between">
+                    <h4>Jobs</h4>
+                    <a class="btn" href="#">More informations</a>
+                </div>
+
+                <ul>
+                    <li>Surface technician - La Chevalerie - Florennes - 2020</li>
+                    <li>Multi-skilled Valorization employee - Ressourcerie RESTOR - Tubize - 2020</li>
+                    <li>Internship - Valorization worker - Ressourcerie RESTOR - Tubize - 2020</li>
+                    <li>Multi-skilled employee - Supermarket Match - Braine-l'Alleud - 2014</li>
+                    <li>Surface technician - ISS Cleaning - Braine-l'Alleud - 2013</li>
+                    <li>Multi-skilled worker - Town hall - Braine-le-Château - 2013</li>
+                    <li>Internship - Small business manager - BD World - Waterloo - 2012</li>
+                    <li>Internship - Multi-skilled saleswoman - Vanille Fraise - Braine-l'Alleud - 2011</li>
+                    <li>Internship - Multi-skilled saleswoman - Le Grenier de Xavière - Braine-l'Alleud - 2011</li>
+                    <li>Internship - Sales assistant - BD World - Waterloo - 2010</li>
+                    <li>Internship - Sales assistant - JBC - Braine-l'Alleud - 2010</li>
+                </ul>
+    
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
+                </div>
+            </div>
+        </section>
+
+        <span id="do-not-gitignore-anchor"></span>
+        <section class="do-not-gitignore" id="do-not-gitignore">
+            <h3>Don't .gitignore this</h3>
+
+            <div>
+                <div class="d-flex justify-content-between">
+                    <h4>Volunteering</h4>
+                    <a class="btn" href="#">More informations</a>
+                </div>
+
+                <ul>
+                    <li>Data encoding - IMPACT - DevGirl_ - Twitch - 2024</li>
+                    <li>Design ideas - cavabiensepasser.fr - ArcureDev - Twitch - 2024</li>
+                    <li>Sales assistant - Croix-Rouge - Hastière - 2021</li>
+                    <li>Graphic Designer and Moderator Discord/Twitch - Gatynn - Twitch - 2015-2018</li>
+                    <li>Photographer - 2012-2018</li>
+                    <li>Multi-skilled employee - Supermarket Match - Braine-l'Alleud - 2014</li>
+                </ul>
+
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
+                </div>
+            </div>
+
+            <div>
+                <h4>Further information</h4>
+
+                <p>I'm a non-binary person. I don't care what pronoun you use, but I'm just as aware of it.</p>
+                
+                <div class="text-right">
+                    <a href="#top-anchor">Return to the top ↑</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center">
         <nav>
             <ul>
                 <li><a href="#">LinkedIn</a></li>
@@ -309,7 +265,7 @@
             </ul>
         </nav>
 
-        <p>Créé par Deborah Clerckx</p>
+        <p>Developed with 💚 by Deborah Clerckx</p>
     </footer>
 </body>
 </html>
