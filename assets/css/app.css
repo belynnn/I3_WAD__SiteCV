@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     padding: 1.5em 1em;
 }
@@ -51,8 +55,4 @@ h3{
     background-color: #adff2f !important;
     color: #1f2123 !important;
     padding: .3em .6em !important;
-}
-
-section>div>.text-right>a>div>img{
-    width: 6.25%;
 }
