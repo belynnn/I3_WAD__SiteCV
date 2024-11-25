@@ -1,0 +1,9 @@
+.pages>.pages-box>ul {
+    margin: 0;
+    list-style: none;
+}
+
+.pages img{
+    width: 30%;
+    margin-inline-end: .5em;
+}
