@@ -5,8 +5,12 @@
     font-family: Arial, sans-serif;
 }
 
-ul{
+nav ul{
     list-style: none;
+}
+
+main ul{
+    margin: 0 0 0 1em;
 }
 
 p{
@@ -15,9 +19,13 @@ p{
 
 img{
     width: 75%;
-    margin-block: 3em;
+    margin-block: 1em;
 }
 
 section{
     margin-block: 3em;
+}
+
+section>div{
+    margin-block: 1.5em;
 }
