@@ -60,3 +60,7 @@ h3{
 footer{
     padding-bottom: 3em;
 }
+
+.bg-success{
+    background-color: #7bff2f !important;
+}
