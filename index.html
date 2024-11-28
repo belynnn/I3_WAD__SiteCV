@@ -11,7 +11,11 @@
     <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/pages.css">
+    <link rel="stylesheet" href="assets/css/tothemoon.css">
+    <link rel="stylesheet" href="assets/css/showmoreorless.css">
+    <script defer src="assets/js/showmoreorless.js"></script>
     <script defer src="assets/js/swiper.js"></script>
+    <script defer src="assets/js/tothemoon.js"></script>
     <script defer src="assets/js/main.js"></script>
 
     <!-- Bootstrap CDN -->
@@ -79,6 +83,11 @@
     </header>
 
     <main class="m-4 pt-3">
+        <!-- JS BUTTON TOP -->
+        <div class="back-to-top">
+            <a href="#top-anchor"><svg xmlns="http://www.w3.org/2000/svg" width="24" heigt="24" fill="black" viewBox="0 0 24 24" ><path d="m2.014 11.998c0 5.517 4.48 9.997 9.998 9.997s9.997-4.48 9.997-9.997c0-5.518-4.479-9.998-9.997-9.998s-9.998 4.48-9.998 9.998zm6.211-1.524s1.505-1.501 3.259-3.254c.146-.147.338-.22.53-.22s.384.073.53.22c1.754 1.752 3.258 3.254 3.258 3.254.145.145.217.335.217.526 0 .192-.074.384-.221.53-.292.293-.766.295-1.057.004l-1.977-1.977v6.693c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-6.693l-1.979 1.978c-.289.289-.761.287-1.054-.006-.147-.147-.221-.339-.222-.53 0-.191.071-.38.216-.525z"/></svg></a>
+        </div>
+
         <section id="landing" class="landing">
             <div class="text-center">
                 <h1 class="text-left">Deborah Clerckx</h1>
@@ -114,193 +123,324 @@
                     <li><a class="btn" href="#former-career-anchor"><span>💼</span> Former career</a></li>
                     <li><a class="btn" href="#do-not-gitignore-anchor"><span>🪅</span> Don't .gitignore this</a></li>
                 </ul>
-    
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
             </div>
         </section>
 
         <span id="career-transition-anchor"></span>
         <section id="career-transition" class="career-transition">
-            <h3>Career transition</h3>
+            <h3>🚀 Career transition</h3>
 
             <div class="box-show">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="careertransition.html#ct-projects-anchor">
-                        <h4>
-                            Projects 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
-                            <span>more informations</span>
-                        </h4>
-                    </a>
-                    
+                    <h4>Projects</h4>
                 </div>
 
-                <ul>
-                    <li><a href="insectopedia.html">Insectopedia - PHP / Symfony7 - 2024</a></li>
-                    <li><a href="greenierplease.html">Greenier, Please - Hackathon - 2024</a></li>
-                    <li><a href="guessthenumber.html">Guess The Number - JavaScript - 2024</a></li>
-                    <li><a href="weatherapp.html">Tuto - Weather App - JavaScript - 2022</a></li>
-                    <li><a href="numbercruncher.html">Tuto - Number Cruncher - JavaScript - 2022</a></li>
-                    <li><a href="vejimo.html">Tuto - Vejimo - JavaScript - 2022</a></li>
-                    <li class="hidden"><a href="numeriquepourtous.html">Numérique Pour Tous - JavaScript - 2021</a></li>
-                    <li class="hidden"><a href="sanctusrp.html">SanctusRP - LUA - 2021</a></li>
-                    <li class="hidden"><a href="deftcardgame.html">DEFT Card Game - MEAN stack - 2021</a></li>
-                    <li class="hidden"><a href="thehangman.html">The Hangman - Turtle Python - 2021</a></li>
-                </ul>
-
-                <button class="btn show-more">show more</button>
-                <button class="hidden btn show-less">show less</button>
-
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td><a href="insectopedia.html">Insectopedia</a></td>
+                            <td>Symfony7</td>
+                            <td>2024</td>
+                            <td><a href="insectopedia.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="greenierplease.html">Greenier, Please</a></td>
+                            <td>Hackathon</td>
+                            <td>2024</td>
+                            <td><a href="greenierplease.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="guessthenumber.html">Guess The Number</a></td>
+                            <td>JS</td>
+                            <td>2024</td>
+                            <td><a href="guessthenumber.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="weatherapp.html">Weather App</a></td>
+                            <td>JS</td>
+                            <td>2022</td>
+                            <td><a href="weatherapp.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="numbercruncher.html">Number Cruncher</a></td>
+                            <td>JS</td>
+                            <td>2022</td>
+                            <td><a href="numbercruncher.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="vejimo.html">Vejimo</a></td>
+                            <td>JS</td>
+                            <td>2022</td>
+                            <td><a href="vejimo.html"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="numeriquepourtous.html">NumériquePourTous</a></td>
+                            <td>JS</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="sanctusrp.html">SanctusRP</a></td>
+                            <td>LUA</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="deftcardgame.html">DEFT Card Game</a></td>
+                            <td>MEAN</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="thehangman.html">The Hangman</a></td>
+                            <td>Python</td>
+                            <td>2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
             </div>
 
             <div class="box-show">
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="careertransition.html#ct-trainings-anchor">
-                        <h4>
-                            Trainings 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
-                            
-                            <span>more informations</span>
-                        </h4>
-                    </a>
+                    <h4>Trainings</h4>
                 </div>
 
-                <ul>
-                    <li><a href="https://interface3.be/fr/se-former-pour-l-emploi/it-training-formations-en-informatique/web-application-developer" rel="noopener noreferrer">Web Application Developer - Interface3 - Brussels - 2024</a></li>
-                    <li><a href="https://www.leforem.be/contact/centres-de-formation/brabant-wallon/tubize.html" rel="noopener noreferrer">Blender - Forem - Tubize - 2023</a></li>
-                    <li><a href="https://www.interface3namur.be/asbl/anciens-projets/developpeuse-eur-back-end-oriente-data/" rel="noopener noreferrer">Backend Developer DATA oriented - Interface3 - Namur - 2021</a></li>
-                    <li class="hidden"><a href="https://www.interface3namur.be/asbl/anciens-projets/decouvre-les-metiers-de-la-data/" rel="noopener noreferrer">Discovery of jobs in IT - Interface3 - Namur - 2021</a></li>
-                </ul>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td><a href="https://interface3.be/fr/se-former-pour-l-emploi/it-training-formations-en-informatique/web-application-developer" rel="noopener noreferrer">Web Application Developer</a></td>
+                            <td>Interface3 · Brussels</td>
+                            <td>2024</td>
+                            <td><a href="https://interface3.be/fr/se-former-pour-l-emploi/it-training-formations-en-informatique/web-application-developer" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.leforem.be/contact/centres-de-formation/brabant-wallon/tubize.html" rel="noopener noreferrer">Blender</a></td>
+                            <td>Forem · Tubize</td>
+                            <td>2023</td>
+                            <td><a href="https://www.leforem.be/contact/centres-de-formation/brabant-wallon/tubize.html" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.interface3namur.be/asbl/anciens-projets/developpeuse-eur-back-end-oriente-data/" rel="noopener noreferrer">Backend Developer & Data</a></td>
+                            <td>Interface3 · Namur</td>
+                            <td>2021</td>
+                            <td><a href="https://www.interface3namur.be/asbl/anciens-projets/developpeuse-eur-back-end-oriente-data/" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                        <tr class="hidden">
+                            <td><a href="https://www.interface3namur.be/asbl/anciens-projets/decouvre-les-metiers-de-la-data/" rel="noopener noreferrer">Discovery of jobs in IT</a></td>
+                            <td>Interface3 · Namur</td>
+                            <td>2021</td>
+                            <td><a href="https://www.interface3namur.be/asbl/anciens-projets/decouvre-les-metiers-de-la-data/" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <button class="btn show-more">show more</button>
-                <button class="hidden btn show-less">show less</button>
-
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
             </div>
 
             <div>
                 <div class="d-flex justify-content-between align-items-center">
-                    <a href="careertransition.html#ct-jobs-anchor">
-                        <h4>
-                            Jobs 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"/></svg>
-                            
-                            <span>more informations</span>
-                        </h4>
-                    </a>
+                    <h4>Jobs</h4>
                 </div>
 
-                <ul>
-                    <li>You ! - Now</li>
-                </ul>
-    
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td>You</td>
+                            <td>Anywhere</td>
+                            <td>NOW</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <span id="former-career-anchor"></span>
         <section id="former-career" class="former-career">
-            <h3>Former career</h3>
+            <h3>💼 Former career</h3>
 
             <div class="box-show">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4>Trainings</h4>
-                    <a class="btn" href="#">More informations</a>
                 </div>
 
-                <ul>
-                    <li>Valorist - AID Val de Senne - Tubize - 2019</li>
-                    <li>Dutch A0 to A2 - Forem - Tubize - 2017</li>
-                    <li>Door-to-door sales assistant - APPCO Group - Charleroi - 2016</li>
-                    <li class="hidden">1st year of Psychology assistant - Institut Marie Haps - Brussels - 2013</li>
-                    <li class="hidden">CESS - Management of small and medium-sized enterprises - Institut de la Vallée Bailly - Braine-l'Alleud - 2012</li>
-                </ul>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td>Valorist</td>
+                            <td>AID Val de Senne</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Dutch A0 to A2</td>
+                            <td>Forem</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>Door-to-door sales assistant</td>
+                            <td>APPCO Group</td>
+                            <td>2016</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>1st year of Psychology assistant</td>
+                            <td>Institut Marie Haps</td>
+                            <td>2013</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>CESS - Management of small and medium-sized enterprises</td>
+                            <td>Institut de la Vallée Bailly</td>
+                            <td>2012</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <button class="btn show-more">show more</button>
-                <button class="hidden btn show-less">show less</button>
-
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
             </div>
 
             <div class="box-show">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4>Jobs</h4>
-                    <a class="btn" href="#">More informations</a>
                 </div>
 
-                <ul>
-                    <li>Surface technician - La Chevalerie - Florennes - 2020</li>
-                    <li>Multi-skilled Valorization employee - Ressourcerie RESTOR - Tubize - 2020</li>
-                    <li>Internship - Valorization worker - Ressourcerie RESTOR - Tubize - 2020</li>
-                    <li class="hidden">Multi-skilled employee - Supermarket Match - Braine-l'Alleud - 2014</li>
-                    <li class="hidden">Surface technician - ISS Cleaning - Braine-l'Alleud - 2013</li>
-                    <li class="hidden">Multi-skilled worker - Town hall - Braine-le-Château - 2013</li>
-                    <li class="hidden">Internship - Small business manager - BD World - Waterloo - 2012</li>
-                    <li class="hidden">Internship - Multi-skilled saleswoman - Vanille Fraise - Braine-l'Alleud - 2011</li>
-                    <li class="hidden">Internship - Multi-skilled saleswoman - Le Grenier de Xavière - Braine-l'Alleud - 2011</li>
-                    <li class="hidden">Internship - Sales assistant - BD World - Waterloo - 2010</li>
-                    <li class="hidden">Internship - Sales assistant - JBC - Braine-l'Alleud - 2010</li>
-                </ul>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td>Surface technician</td>
+                            <td>La Chevalerie</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>Multi-skilled Valorization employee</td>
+                            <td>Ressourcerie RESTOR</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr>
+                            <td>Valorization worker</td>
+                            <td>Ressourcerie RESTOR</td>
+                            <td>2020</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Multi-skilled employee</td>
+                            <td>Supermarket Match</td>
+                            <td>2014</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Surface technician</td>
+                            <td>ISS Cleaning</td>
+                            <td>2013</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Multi-skilled worker</td>
+                            <td>Town hall Braine-le-Château</td>
+                            <td>2013</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Small business manager</td>
+                            <td>BD World</td>
+                            <td>2012</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Multi-skilled saleswoman</td>
+                            <td>Vanille Fraise</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Multi-skilled saleswoman</td>
+                            <td>Le Grenier de Xavière</td>
+                            <td>2011</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Sales assistant</td>
+                            <td>BD World</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Sales assistant</td>
+                            <td>JBC</td>
+                            <td>2010</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <button class="btn show-more">show more</button>
-                <button class="hidden btn show-less">show less</button>
-    
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
             </div>
         </section>
 
         <span id="do-not-gitignore-anchor"></span>
         <section class="do-not-gitignore" id="do-not-gitignore">
-            <h3>Don't .gitignore this</h3>
+            <h3>🪅 Don't .gitignore this</h3>
 
             <div class="box-show">
                 <div class="d-flex justify-content-between align-items-center">
                     <h4>Volunteering</h4>
-                    <a class="btn" href="#">More informations</a>
                 </div>
 
-                <ul>
-                    <li><a href="https://github.com/Lauwed/impact-api">Data encoding - IMPACT - DevGirl_ - Twitch - 2024</a></li>
-                    <li><a href="https://test.cavabiensepasser.fr/home">Design ideas - cavabiensepasser.fr - ArcureDev - Twitch - 2024</a></li>
-                    <li>Sales assistant - Croix-Rouge - Hastière - 2021</li>
-                    <li class="hidden">Graphic Designer and Moderator Discord/Twitch - Gatynn - Twitch - 2015-2018</li>
-                    <li class="hidden">Photographer - 2012-2018</li>
-                    <li class="hidden">Modératrice - Isolonice - Serveur Minecraft - 2010-2011</li>
-                    <li class="hidden">Animatrice Communautaire - Isolonice - Serveur Minecraft - 2010-2011</li>
-                    <li class="hidden">Modératrice - Sanctuary - Serveur Minecraft - 2009-2010</li>
-                    <li class="hidden">Administratrice - Warea Network - Serveur WoW - 2008-2009</li>
-                    <li class="hidden">Modératrice - Warea Network - Serveur WoW - 2007-2008</li>
-                </ul>
+                <table class="table-container mb-2">
+                    <tbody>
+                        <tr>
+                            <td><a href="https://github.com/Lauwed/impact-api">Data encoding</a></td>
+                            <td>IMPACT · DevGirl_</td>
+                            <td>2024</td>
+                            <td><a href="https://github.com/Lauwed/impact-api">info</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://test.cavabiensepasser.fr/home">Design ideas</a></td>
+                            <td>cavabiensepasser.fr · ArcureDev</td>
+                            <td>2024</td>
+                            <td><a href="https://test.cavabiensepasser.fr/home">info</a></td>
+                        </tr>
+                        <tr>
+                            <td>Sales assistant</td>
+                            <td>Croix-Rouge</td>
+                            <td>2021</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Designer & Moderator Discord/Twitch</td>
+                            <td>Gatynn</td>
+                            <td>2015-2018</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Photographer</td>
+                            <td>2012-2018</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Modératrice</td>
+                            <td>Isolonice</td>
+                            <td>2010-2011</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Animatrice</td>
+                            <td>Isolonice</td>
+                            <td>2010-2011</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Modératrice</td>
+                            <td>Sanctuary</td>
+                            <td>2009-2010</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Administratrice</td>
+                            <td>Warea Network</td>
+                            <td>2008-2009</td>
+                        </tr>
+                        <tr class="hidden">
+                            <td>Modératrice</td>
+                            <td>Warea Network</td>
+                            <td>2007-2008</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-                <button class="btn show-more">show more</button>
-                <button class="hidden btn show-less">show less</button>
-
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
+                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
             </div>
 
             <div>
                 <h4>Further information</h4>
 
                 <p>I'm a non-binary person. I don't care what pronoun you use, but I'm just as aware of it.</p>
-                
-                <div class="text-right">
-                    <a href="#top-anchor">Return to the top ↑</a>
-                </div>
             </div>
         </section>
     </main>

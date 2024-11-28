@@ -1,0 +1,24 @@
+.back-to-top {
+    position: fixed; /* Fixe le bouton à un endroit précis de l'écran */
+    bottom: 80px; /* Distance par rapport au bas de l'écran */
+    right: 20px; /* Distance par rapport au bord droit de l'écran */
+    z-index: 1000; /* Assure que le bouton reste au-dessus des autres éléments */
+    background-color: #7bff2fc1; /* Couleur de fond (par exemple, vert) */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.206); /* Légère ombre pour le style */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 14px; /* Taille du texte */
+    transition: opacity 0.3s ease; /* Animation pour l'apparition/disparition */
+}
+
+.back-to-top.hidden {
+    opacity: 0; /* Rend le bouton invisible */
+    pointer-events: none; /* Désactive les clics */
+}
+
+.back-to-top a{
+    color: #1e271c !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
