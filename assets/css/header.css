@@ -1,3 +1,15 @@
+nav ul{
+    list-style: none;
+}
+
 .navbar-brand .text-success{
     color: #1f2123 !important;
+}
+
+header>nav{
+    box-shadow: 0 -25px 100px #1f21234a;
+}
+
+header>ul{
+    box-shadow: 0 -25px 100px #1f21234a;
 }

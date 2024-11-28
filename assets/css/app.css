@@ -13,12 +13,12 @@ body{
     padding: 1.5em 1em;
 }
 
-nav ul{
-    list-style: none;
-}
-
 main ul{
     margin: 0 0 0 1em;
+}
+
+a{
+    color: #2c5415 !important;
 }
 
 .me{
@@ -51,6 +51,13 @@ h3{
     text-transform: uppercase;
 }
 
+h4{
+    padding-top: .25em;
+}
+h4>span{
+    font-size: 13px;
+}
+
 .btn{
     background-color: #7bff2f !important;
     color: #1f2123 !important;
@@ -63,4 +70,8 @@ footer{
 
 .bg-success{
     background-color: #7bff2f !important;
+}
+
+.box-show>ul{
+    margin-bottom: .5em;
 }
