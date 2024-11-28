@@ -1,0 +1,31 @@
+.btn{
+    background-color: #7bff2f !important;
+    color: #1f2123 !important;
+}
+
+.btn-border{
+    background-color: #7bff2f4a !important;
+    color: #1f2123 !important;
+    border: 2px solid #7bff2f;
+    border-radius: 5px;
+    padding: .1em .2em !important;
+}
+
+.show-btn{
+    text-align: right;
+}
+
+.table-container .hidden {
+    display: none;
+}
+
+.table-container {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.table-container td {
+    padding: 5px;
+    border: 1px solid #bdcab6;
+}

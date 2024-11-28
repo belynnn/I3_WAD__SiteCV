@@ -1,0 +1,16 @@
+/* PHOTO INDEX */
+.me{
+    width: 75%;
+    margin-block-start: 2em;
+}
+
+/* gap between btn about */
+.about>div>a{
+    margin: .25em;
+    font-size: 1.25em;
+}
+
+/* LOGO */
+.bg-success{
+    background-color: #7bff2f !important;
+}

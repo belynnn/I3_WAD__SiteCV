@@ -4,19 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack Developer - Deborah Clerckx</title>
+    <!-- GOOGLE FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS SPECIFICS -->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/media-queries/middle-screen.css">
     <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/pages.css">
-    <link rel="stylesheet" href="assets/css/tothemoon.css">
-    <link rel="stylesheet" href="assets/css/showmoreorless.css">
-    <script defer src="assets/js/showmoreorless.js"></script>
-    <script defer src="assets/js/swiper.js"></script>
-    <script defer src="assets/js/tothemoon.js"></script>
+    <link rel="stylesheet" href="assets/css/btn_top.css">
+    <link rel="stylesheet" href="assets/css/btn_more_less.css">
+    <link rel="stylesheet" href="assets/css/specifics.css">
     <script defer src="assets/js/main.js"></script>
+    <script defer src="assets/js/swiper.js"></script>
+    <script defer src="assets/js/btn_more_less.js"></script>
+    <script defer src="assets/js/btn_top.js"></script>
 
     <!-- Bootstrap CDN -->
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -30,41 +39,19 @@
 <body>
     <span id="top-anchor"></span>
     <header>
-        <nav class="fixed-top d-flex justify-content-between navbar navbar-light bg-light">
-            <a class="navbar-brand btn" href="#"><span class="h2 text-success">// CKX</span></a>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Career transition
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="careertransition.html#ct-projects-anchor">Projects</a>
-                            <a class="dropdown-item" href="careertransition.html#ct-trainings-anchor">Trainings</a>
-                            <a class="dropdown-item" href="careertransition.html#ct-jobs-anchor">Jobs</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Former career
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="formercareer.html#fc-projects-anchor">Projects</a>
-                            <a class="dropdown-item" href="formercareer.html#fc-trainings-anchor">Trainings</a>
-                            <a class="dropdown-item" href="formercareer.html#fc-jobs-anchor">Jobs</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+        <nav class="nav-container">
+            <div class="brand">
+                <a href="#" class="btn logo">// CKX</a>
+                <button id="menu-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
+            <div id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Career transition</a></li>
+                    <li><a href="#">Former career</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -83,7 +70,7 @@
     </header>
 
     <main class="m-4 pt-3">
-        <!-- JS BUTTON TOP -->
+        <!-- JS BTN TOP -->
         <div class="back-to-top">
             <a href="#top-anchor"><svg xmlns="http://www.w3.org/2000/svg" width="24" heigt="24" fill="black" viewBox="0 0 24 24" ><path d="m2.014 11.998c0 5.517 4.48 9.997 9.998 9.997s9.997-4.48 9.997-9.997c0-5.518-4.479-9.998-9.997-9.998s-9.998 4.48-9.998 9.998zm6.211-1.524s1.505-1.501 3.259-3.254c.146-.147.338-.22.53-.22s.384.073.53.22c1.754 1.752 3.258 3.254 3.258 3.254.145.145.217.335.217.526 0 .192-.074.384-.221.53-.292.293-.766.295-1.057.004l-1.977-1.977v6.693c0 .414-.336.75-.75.75s-.75-.336-.75-.75v-6.693l-1.979 1.978c-.289.289-.761.287-1.054-.006-.147-.147-.221-.339-.222-.53 0-.191.071-.38.216-.525z"/></svg></a>
         </div>
@@ -117,12 +104,10 @@
                 <p>As well as the technical aspects, I attach great importance to <strong>collaboration and mutual support within teams</strong>, because I'm convinced that <strong>it's together that we build the best solutions</strong>.</p>
                 <p>Always <strong>curious</strong> and <strong>eager to learn</strong>, I'm looking for an environment where I can take on <strong>new challenges</strong>, <strong>share my knowledge</strong> and <strong>actively contribute to innovation</strong> and <strong>collective success</strong>.</p>
                 
-                <ul>
-                    <li><a class="btn" href="about.html"><span>📓</span> Keep reading</a></li>
-                    <li><a class="btn" href="#career-transition-anchor"><span>🚀</span> Career transition to Web Development</a></li>
-                    <li><a class="btn" href="#former-career-anchor"><span>💼</span> Former career</a></li>
-                    <li><a class="btn" href="#do-not-gitignore-anchor"><span>🪅</span> Don't .gitignore this</a></li>
-                </ul>
+                <a class="btn" href="about.html">📓 Keep reading</a>
+                <a class="btn" href="#career-transition-anchor">🚀 Career transition</a>
+                <a class="btn" href="#former-career-anchor">💼 Former career</a>
+                <a class="btn" href="#do-not-gitignore-anchor">🪅 Don't .gitignore this</a>
             </div>
         </section>
 
@@ -195,9 +180,11 @@
                         </tr>
                     </tbody>
                 </table>
-                
-                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
-                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+
+                <div class="show-btn">
+                    <button class="btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                    <button class="hidden btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                </div>
             </div>
 
             <div class="box-show">
@@ -215,7 +202,7 @@
                         </tr>
                         <tr>
                             <td><a href="https://www.leforem.be/contact/centres-de-formation/brabant-wallon/tubize.html" rel="noopener noreferrer">Blender</a></td>
-                            <td>Forem · Tubize</td>
+                            <td>Forem</td>
                             <td>2023</td>
                             <td><a href="https://www.leforem.be/contact/centres-de-formation/brabant-wallon/tubize.html" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" fill="green" width="20" height="20" viewBox="0 2 24 24"><path d="m12.002 2.005c5.518 0 9.998 4.48 9.998 9.997 0 5.518-4.48 9.998-9.998 9.998-5.517 0-9.997-4.48-9.997-9.998 0-5.517 4.48-9.997 9.997-9.997zm0 8c-.414 0-.75.336-.75.75v5.5c0 .414.336.75.75.75s.75-.336.75-.75v-5.5c0-.414-.336-.75-.75-.75zm-.002-3c-.552 0-1 .448-1 1s.448 1 1 1 1-.448 1-1-.448-1-1-1z"/></svg></a></td>
                         </tr>
@@ -234,8 +221,10 @@
                     </tbody>
                 </table>
 
-                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
-                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                <div class="show-btn">
+                    <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                    <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                </div>
             </div>
 
             <div>
@@ -294,8 +283,10 @@
                     </tbody>
                 </table>
 
-                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
-                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                <div class="show-btn">
+                    <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                    <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                </div>
             </div>
 
             <div class="box-show">
@@ -363,8 +354,10 @@
                     </tbody>
                 </table>
 
-                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
-                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                <div class="show-btn">
+                    <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                    <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                </div>
             </div>
         </section>
 
@@ -433,8 +426,10 @@
                     </tbody>
                 </table>
 
-                <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
-                <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                <div class="show-btn">
+                    <button class="btn btn-border show-more"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 12l-5-5h10l-5 5z"/></svg></button>
+                    <button class="hidden btn btn-border show-less"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="20" height="20" viewBox="0 0 20 20"><path d="M10 8l5 5H5l5-5z"/></svg></button>
+                </div>
             </div>
 
             <div>

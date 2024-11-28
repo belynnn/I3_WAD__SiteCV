@@ -17,3 +17,11 @@ document.querySelectorAll('.swiper-slide').forEach(slide => {
         showLessBtn.classList.add('hidden');
     });
 });
+
+
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show'); // Ajoute ou retire la classe "show"
+});
