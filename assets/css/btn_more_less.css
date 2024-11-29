@@ -12,27 +12,22 @@
     cursor: pointer;
 }
 
-.show-btn button {
-    transition: transform 0.3s ease !important;
-}
-
-.show-btn button:active {
-    transform: scale(0.9) !important;
-}
-
 .show-btn{
     text-align: right;
 }
 
-
-.grid-container {
+.grid-container{
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1fr .4fr; /* 4 colonnes */
     overflow: hidden; /* Cache les lignes supplémentaires */
-    transition: 1s ease; /* Animation de l'expansion */
 }
 
-.grid-item, .hidden-row {
+.fc-trainings>.grid-container, .fc-jobs>.grid-container{
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes */
+
+}
+
+.grid-item, .hidden-row{
     padding: 5px;
     border-bottom: 1px solid #ddd;
 }
@@ -41,10 +36,20 @@
     opacity: 0;
     height: 0;
     overflow: hidden;
-    transition: opacity 0.3s ease, height 0.3s ease;
+    transition: opacity .75s ease, height .75s ease;
 }
 
 .hidden-row.show {
     opacity: 1;
     height: auto;
+}
+
+.show-box {
+    height: 200px; /* Hauteur par défaut */
+    overflow: hidden; /* Cache le contenu dépassant */
+    transition: height 0.3s ease; /* Animation pour une transition fluide */
+}
+
+.show-box.expanded {
+    height: auto; /* Hauteur automatique lorsqu'elle est étendue */
 }

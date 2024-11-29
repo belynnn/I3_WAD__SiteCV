@@ -20,33 +20,32 @@ document.querySelectorAll('.box-show').forEach(tc => {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const hiddenRowsData = [
-        ["Weather App", "JS", "2022", "weatherapp.html"],
-        ["Number Cruncher", "JS", "2022", "numbercruncher.html"],
-        ["Vejimo", "JS", "2022", "vejimo.html"],
-        ["Numérique Pour Tous", "JS", "2021", "numeriquepourtous.html"],
-        ["SanctusRP", "LUA", "2021", "sanctusrp.html"],
-        ["DEFT Card Game", "MEAN", "2021", "deftcardgame.html"],
-        ["The Hangman", "Python", "2021", "thehangman.html"]
-    ];
-    
-    const showMoreBtn = document.querySelector('.show-more');
-    const showLessBtn = document.querySelector('.show-less');
-    const hiddenRows = document.querySelectorAll('.hidden-row');
-    
-    showMoreBtn.addEventListener('click', () => {
-        hiddenRows.forEach(row => {
-            row.classList.add('show'); // Montre les lignes supplémentaires
+    // Sélectionne tous les conteneurs avec la classe 'show-box'
+    const showBoxes = document.querySelectorAll('.show-box');
+
+    showBoxes.forEach(showBox => {
+        const showMoreBtn = showBox.querySelector('.show-more');
+        const showLessBtn = showBox.querySelector('.show-less');
+        const hiddenRows = showBox.querySelectorAll('.hidden-row');
+
+        // Bouton "Voir plus"
+        showMoreBtn.addEventListener('click', () => {
+            hiddenRows.forEach(row => {
+                row.classList.add('show'); // Montre les lignes supplémentaires
+            });
+            showBox.classList.add('expanded'); // Hauteur auto
+            showMoreBtn.classList.add('hidden');
+            showLessBtn.classList.remove('hidden');
         });
-        showMoreBtn.classList.add('hidden');
-        showLessBtn.classList.remove('hidden');
-    });
-    
-    showLessBtn.addEventListener('click', () => {
-        hiddenRows.forEach(row => {
-            row.classList.remove('show'); // Cache les lignes supplémentaires
+
+        // Bouton "Voir moins"
+        showLessBtn.addEventListener('click', () => {
+            hiddenRows.forEach(row => {
+                row.classList.remove('show'); // Cache les lignes supplémentaires
+            });
+            showBox.classList.remove('expanded'); // Reviens à 150px
+            showMoreBtn.classList.remove('hidden');
+            showLessBtn.classList.add('hidden');
         });
-        showMoreBtn.classList.remove('hidden');
-        showLessBtn.classList.add('hidden');
     });
 });

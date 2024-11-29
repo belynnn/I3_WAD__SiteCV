@@ -23,7 +23,7 @@ section{
 }
 
 section>div{
-    margin-block: 1.5em;
+    margin-block: .8em;
 }
 
 h1{
@@ -46,10 +46,6 @@ h4{
 
 h4>span{
     font-size: 13px;
-}
-
-td a{
-    font-weight: 500;
 }
 
 footer{
