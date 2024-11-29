@@ -1,3 +1,14 @@
+.landing > div > nav > ul > li{
+    background-color: #7bff2f !important;
+    margin: .1em;
+    padding: .2em 1em;
+    border-radius: 5px;
+}
+
+.landing > div > a{
+    font-size: 110%;
+}
+
 /* PHOTO INDEX */
 .me{
     width: 75%;
@@ -10,7 +21,6 @@
     font-size: 110%;
 }
 
-/* LOGO */
 .bg-success{
     background-color: #7bff2f !important;
 }

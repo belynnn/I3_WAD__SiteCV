@@ -7,10 +7,10 @@ header>nav{
 }
 
 header>ul{
-    box-shadow: 0 -25px 100px #1f21234a;
+    box-shadow: 0 25px 100px #1f21234a;
 }
 
-.nav-container {
+.nav-container{
     position: fixed;
     top: 0;
     left: 0;
@@ -23,17 +23,17 @@ header>ul{
     z-index: 1000;
 }
 
-.brand {
+.brand{
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
 }
 
-.logo {
+.logo{
     font-size: 24px;
+    font-weight: 600;
     text-decoration: none;
-    color: #28a745;
 }
 
 #menu-toggle {
