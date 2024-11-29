@@ -9,23 +9,42 @@
     border: 2px solid #7bff2f;
     border-radius: 5px;
     padding: .1em .2em !important;
+    cursor: pointer;
+}
+
+.show-btn button {
+    transition: transform 0.3s ease !important;
+}
+
+.show-btn button:active {
+    transform: scale(0.9) !important;
 }
 
 .show-btn{
     text-align: right;
 }
 
-.table-container .hidden {
-    display: none;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1fr .4fr; /* 4 colonnes */
+    overflow: hidden; /* Cache les lignes supplémentaires */
+    transition: 1s ease; /* Animation de l'expansion */
 }
 
-.table-container {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1rem 0;
-}
-
-.table-container td {
+.grid-item, .hidden-row {
     padding: 5px;
-    border: 1px solid #bdcab6;
+    border-bottom: 1px solid #ddd;
+}
+
+.hidden-row {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, height 0.3s ease;
+}
+
+.hidden-row.show {
+    opacity: 1;
+    height: auto;
 }

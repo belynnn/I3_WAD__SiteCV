@@ -1,8 +1,8 @@
-.hidden {
+.hidden{
     display: none;
 }
 
-.pages>.pages-box>ul {
+.pages>.pages-box>ul{
     margin: 0;
     list-style: none;
 }
