@@ -4,18 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack Developer - Deborah Clerckx</title>
+    
+    <!-- GOOGLE FONT ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS BOOTSTRAP CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS SPECIFICS -->
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/landing.css">
-    <link rel="stylesheet" href="assets/css/media-queries/middle-screen.css">
-    <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
     <link rel="stylesheet" href="assets/css/swiper.css">
     <link rel="stylesheet" href="assets/css/pages.css">
-    <script defer src="assets/js/swiper.js"></script>
+    <link rel="stylesheet" href="assets/css/btn_top.css">
+    <link rel="stylesheet" href="assets/css/specifics.css">
+    <link rel="stylesheet" href="assets/css/btn_more_less.css">
+    <link rel="stylesheet" href="assets/css/media-queries/middle-screen.css">
+    <link rel="stylesheet" href="assets/css/media-queries/large-screen.css">
+    
+    <!-- JS SPECIFICS -->
+    <script defer src="assets/js/btn_more_less.js"></script>
     <script defer src="assets/js/main.js"></script>
-
+    <script defer src="assets/js/swiper.js"></script>
+    <script defer src="assets/js/btn_top.js"></script>
+    
     <!-- Bootstrap CDN -->
     <script defer src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
@@ -28,68 +42,88 @@
 <body>
     <span id="top-anchor"></span>
     <header>
-        <nav class="fixed-top d-flex justify-content-between navbar navbar-light bg-light">
-            <a class="navbar-brand btn" href="index.html"><span class="h2 text-success">// CKX</span></a>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="nav-container">
+            <div class="brand">
+                <a href="index.html" class="btn logo">// CKX</a>
+                
+                <button id="menu-toggle" aria-label="Toggle navigation">
+                    ☰
+                </button>
+            </div>
 
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Career transition
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="careertransition.html#ct-projects-anchor">Projects</a>
-                            <a class="dropdown-item" href="careertransition.html#ct-trainings-anchor">Trainings</a>
-                            <a class="dropdown-item" href="careertransition.html#ct-jobs-anchor">Jobs</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Former career
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="formercareer.html#fc-projects-anchor">Projects</a>
-                            <a class="dropdown-item" href="formercareer.html#fc-trainings-anchor">Trainings</a>
-                            <a class="dropdown-item" href="formercareer.html#fc-jobs-anchor">Jobs</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+            <div id="nav-links" class="nav-links">
+                <ul>
+                    <li><a href="about.html">📓 About</a></li>
+                    <li><a href="careertransition.html">🚀 Career transition</a></li>
+                    <li><a href="formercareer.html">💼 Former career</a></li>
+                    <li><a href="contact.html">🪅 Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-links-lg-win">
+                <ul>
+                    <li><a href="about.html">📓 About</a></li>
+                    <li><a href="careertransition.html">🚀 Career transition</a></li>
+                    <li><a href="formercareer.html">💼 Former career</a></li>
+                    <li><a href="contact.html">🪅 Contact</a></li>
                 </ul>
             </div>
         </nav>
 
-        <ul class="p-2 fixed-bottom nav bg-success d-flex justify-content-around">
+        <ul class="bt-navbar p-1 fixed-bottom nav bg-success d-flex justify-content-around">
             <li class="nav-item">
-                <a class="nav-link" href="https://github.com/belynnn"><svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="40" height="40" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                <a class="nav-link" href="https://github.com/belynnn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="35" height="35" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="40" height="40" viewBox="0 0 24 24"><path d="M12 1l-12 12h3v10h18v-10h3l-12-12zm0 18c-1.607-1.626-3-2.84-3-4.027 0-1.721 2.427-2.166 3-.473.574-1.695 3-1.246 3 .473 0 1.187-1.393 2.402-3 4.027zm8-11.907l-3-3v-2.093h3v5.093z"/></svg></a>
+                <a class="nav-link" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="35" height="35" viewBox="0 0 24 24">
+                        <path d="M12 1l-12 12h3v10h18v-10h3l-12-12zm0 18c-1.607-1.626-3-2.84-3-4.027 0-1.721 2.427-2.166 3-.473.574-1.695 3-1.246 3 .473 0 1.187-1.393 2.402-3 4.027zm8-11.907l-3-3v-2.093h3v5.093z"/>
+                    </svg>
+                </a>
             </li>
+            
             <li class="nav-item">
-                <a class="nav-link" href="https://www.linkedin.com/in/deborah-clerckx/"><svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="40" height="40" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/></svg></a>
+                <a class="nav-link" href="https://www.linkedin.com/in/deborah-clerckx/">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="35" height="35" viewBox="0 0 24 24">
+                        <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                    </svg>
+                </a>
             </li>
         </ul>
+
+        <div class="socials">
+            <ul>
+                <li>
+                    <a class="nav-link" href="assets/pdfs/deborah_clerckx_cv_2024.pdf">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="42" height="42" viewBox="2.25 0 24 24">
+                            <path d="M13 9L15 15L17 9M10 15C9.06812 15 8.60218 15 8.23463 14.8478C7.74458 14.6448 7.35523 14.2554 7.15224 13.7654C7 13.3978 7 12.9319 7 12C7 11.0681 7 10.6022 7.15224 10.2346C7.35523 9.74458 7.74458 9.35523 8.23463 9.15224C8.60218 9 9.06812 9 10 9M7.2 20H16.8C17.9201 20 18.4802 20 18.908 19.782C19.2843 19.5903 19.5903 19.2843 19.782 18.908C20 18.4802 20 17.9201 20 16.8V7.2C20 6.0799 20 5.51984 19.782 5.09202C19.5903 4.71569 19.2843 4.40973 18.908 4.21799C18.4802 4 17.9201 4 16.8 4H7.2C6.0799 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://www.linkedin.com/in/deborah-clerckx/">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="35" height="35" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-link" href="https://github.com/belynnn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#1f2123" width="35" height="35" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="m-2">
-        <nav class="socials">
-            <ul class="d-flex justify-content-between">
-                <li><a href="#">LinkedIn</a></li>
-                <li><a href="#">GitHub</a></li>
-                <li><a href="#">Bento.me</a></li>
-                <li><a href="#">Mail</a></li>
-            </ul>
-        </nav>
-
         <span id="ct-projects-anchor"></span>
         <section class="career-transition">
             <h3>Career transition</h3>

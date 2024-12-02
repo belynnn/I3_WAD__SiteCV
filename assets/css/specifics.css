@@ -24,3 +24,11 @@
 .bg-success{
     background-color: #7bff2f !important;
 }
+
+.btn-keep-scroll{
+    display: none;
+}
+
+.nav-links-lg-win{
+    display: none;
+}

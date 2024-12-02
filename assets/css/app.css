@@ -3,7 +3,7 @@
     padding: 0;
     font-size: 102%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    overflow-x: hidden; /* Empêche les débordements horizontaux */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
 }
 
 html{
@@ -19,11 +19,11 @@ a{
 }
 
 section{
-    margin-block: 3em;
+    margin-block: 7.5%;
 }
 
 section>div{
-    margin-block: .8em;
+    margin-block: .5%;
 }
 
 h1{

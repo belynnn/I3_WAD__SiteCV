@@ -1,32 +1,124 @@
 /* Media Query : Écrans larges */
-@media (min-width: 1024px) {
-    main{
-        width: 75%;
+@media (min-width: 1024px){
+    *{
+        font-size: 105%;
+    }
+
+    body{
+        max-width: 55%; /* Conteneur principal centré */
         margin: auto;
     }
 
-    .socials{
-        position: fixed; /* Positionne la navigation de manière fixe par rapport à l'écran */
-        bottom: 0; /* Aligne la navigation au bas de l'écran */
-        left: 0; /* La positionne à gauche de l'écran */
-        width: 200px; /* Largeur fixe */
-        padding: 1rem;
-        display: flex;
-        flex-direction: column; /* Empile les éléments verticalement */
-        gap: 1rem; /* Espacement entre les liens */
+    .brand > button {
+        display: none;
     }
 
-    .socials ul {
-        flex-direction: column; /* Repasse les liens en ligne */
-        gap: 2em;
+    header .logo{
+        zoom: 75%;
     }
 
-    .landing {
-        height: 75vh;
+    .nav-links {
+        display: none;
     }
 
-    .landing img {
+    /* Style global pour la navbar */
+    .nav-container {
+        display: flex; /* Flexbox pour l'agencement */
+        justify-content: center; /* Centre les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+        gap: 2rem; /* Ajoute un espacement entre le logo et les liens */
+        width: 40%; /* Limite la largeur de la barre */
+        margin: 20px auto 0 auto; /* Centre la barre horizontalement */
+        position: fixed; /* Rend la navbar fixe au sommet */
+        top: 0; /* Place la navbar tout en haut */
+        left: 0; /* S'assure qu'elle commence à gauche */
+        right: 0; /* S'étend jusqu'à droite */
+        z-index: 1000; /* Place au-dessus d'autres éléments */
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.911);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ajoute une ombre subtile (optionnel) */
+    }
+
+    /* Style pour le logo */
+    .brand {
+        left: 0; /* Place à gauche */
+    }
+
+    .brand .logo {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .nav-links-lg-win{
         display: block;
-        width: 30%; /* Limite la largeur sur les écrans plus grands */
+    }
+
+    /* Style pour les liens */
+    .nav-links-lg-win ul {
+        display: flex;
+        gap: 1rem; /* Espacement entre les liens */
+        list-style: none; /* Supprime les puces */
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links-lg-win ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: color 0.3s;
+    }
+
+    .socials{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 200px;
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .bt-navbar{
+        display: none !important;
+    }
+
+    .socials ul{
+        list-style: none;
+        flex-direction: column;
+    }
+
+    .landing{
+        height: 55.5vh;
+        margin-top: 20%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .landing>div>nav{
+        display: none !important;
+    }
+
+    .landing .me {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .landing>div>.btn{
+        text-align: center;
+        display: block;
+        width: 30%;
+    }
+
+    .btn-keep-scroll{
+        display: block;
+        text-align: center;
+        zoom: 300%;
     }
 }
